@@ -17,7 +17,7 @@ class InternetBloc extends Bloc<InternetEvent, InternetState> {
       }
 
       if(event is NotConnectedEvent){
-        emit(ConnectedState(message: 'Not connected'));
+        emit(NotConnectedState(message: 'Not connected'));
       }
     });
     _streamSubscription = Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
