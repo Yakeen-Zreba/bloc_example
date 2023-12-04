@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
             .of(context)
             .colorScheme
             .inversePrimary,
-        title: const Text('Hi3'),
+        title: const Text('Hi4'),
       ),
       body: BlocBuilder<InternetBloc, InternetState>(
         builder: (context, state) {
